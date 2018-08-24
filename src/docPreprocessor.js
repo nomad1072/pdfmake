@@ -162,7 +162,7 @@ DocPreprocessor.prototype.preprocessText = function (node) {
 				_pseudo: true
 			};
 		}
-		node.text = '00000';
+		node.text = node.text ? node.text: '00000';
 		node._pageRef = this.nodeReferences[node.pageReference];
 	}
 
